@@ -1,9 +1,15 @@
 <p>listado works!</p>
 
+<!-- <div *ngIf="heroeBorrado ">
+    <h3>Heroe Borrado</h3>
+        <span><small>{{ heroeBorrado }}</small></span>
+</div> -->
+
 <div *ngIf=" heroeBorrado; else noBorrado ">
     <h3>Heroe Borrado</h3>
         <span><small>{{ heroeBorrado }}</small></span>
 </div>
+
 
 <ng-template #noBorrado>
     <h3>No ha borrado nada</h3>

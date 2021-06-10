@@ -13,6 +13,7 @@ export class ListadoComponent {
   borrarHeroe(): void {
     const heroeBorrado = this.heroes.shift();
     //console.log(heroeBorrado);
+    // Si retorna undefined en el caso de que no exista nada por eliminar
     this.heroeBorrado = heroeBorrado || '';
 
   }
